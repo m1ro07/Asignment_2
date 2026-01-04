@@ -6,7 +6,6 @@ public class Person implements Payable, Comparable<Person>{
     public String name;
     public String surname;
     public double gpa;
-    public double salary;
 
 
     public Person(){
@@ -14,7 +13,7 @@ public class Person implements Payable, Comparable<Person>{
     }
 
     public Person(String name, String surname) {
-        id = id_gen;
+        id = id_gen++;
         this.name = name;
         this.surname = surname;
     }
