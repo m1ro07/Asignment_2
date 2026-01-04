@@ -11,11 +11,14 @@ public class Student extends Person{
     }
 
 
-    @Override
-    public int compareTo(Person anotherPerson){
-        return Double.compare(this.getPaymentAmount(), anotherPerson.getPaymentAmount());
-    }
 
+    @Override
+    public double getPaymentAmount(){
+        if (gpa >= 2.67){
+            return 36660;
+        }
+        return 0;
+    }
 
     @Override
     public String toString(){

@@ -13,7 +13,7 @@ public class Person implements Payable, Comparable<Person>{
     }
 
     public Person(String name, String surname) {
-        id = id_gen++;
+        this();
         this.name = name;
         this.surname = surname;
     }
@@ -25,9 +25,6 @@ public class Person implements Payable, Comparable<Person>{
 
     @Override
     public double getPaymentAmount(){
-        if (gpa >= 2.67){
-            return 36660;
-        }
         return 0;
     }
 

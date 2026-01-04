@@ -19,11 +19,6 @@ public class Employee extends Person{
     }
 
     @Override
-    public int compareTo(Person anotherPerson){
-        return Double.compare(this.getPaymentAmount(),anotherPerson.getPaymentAmount());
-    }
-
-    @Override
     public String toString(){
         return "Employee: " + id + ". " + name + " " + surname + " " + position + " : " + salary;
     }
